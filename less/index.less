@@ -67,12 +67,12 @@ p, a, h3, h2, h4 {
 @blackColor: black;
 @blueColor: blue;
 
-.flex-column {
+.flex-column() {
 	display: flex;
 	flex-direction: column;
 }
 
-.flex-around {
+.flex-around() {
 	display: flex;
 	justify-content: space-around;
 }
@@ -103,7 +103,7 @@ html, body {
 	header {
 				
 		nav .links {
-			.flex-around;
+			.flex-around();
 			font-size: 1.6rem;
 			padding: 2% 0;
 
@@ -115,7 +115,7 @@ html, body {
 		}
 
 		#contact {
-			.flex-column;
+			.flex-column();
 			align-items: center;
 			border-bottom: 2px dotted @grayColor;
 
@@ -149,7 +149,7 @@ html, body {
 			}
 		}
 		.intro {						
-			.flex-column;
+			.flex-column();
 			width: 95%;
 			line-height: 1.5;
 			
@@ -194,7 +194,7 @@ html, body {
 		border-bottom: 2px dotted @grayColor;
 
 		.middle-center {
-			.flex-around;
+			.flex-around();
 			width: 95%;
 			padding: 5% 0;
 
@@ -204,7 +204,7 @@ html, body {
 			}
 		
 			.left-side {
-				.flex-column;
+				.flex-column();
 				width: 43%;
 				line-height: 1.5;		
 
@@ -236,7 +236,7 @@ html, body {
 			}	
 			
 			.right-side {				
-				.flex-column;
+				.flex-column();
 				width: 43%;	
 
 				@media (max-width: 500px) {
@@ -254,7 +254,7 @@ html, body {
 				}
 
 				.skills-list {
-					.flex-column;					
+					.flex-column();					
 					height: 100%;
 
 					@media (max-width: 500px) {
@@ -294,7 +294,7 @@ html, body {
 	}
 
 	#bottom-content {		
-		.flex-column;
+		.flex-column();
 		align-items: center;
 		padding-bottom: 5%;	
 
@@ -318,7 +318,7 @@ html, body {
 		}
 
 		.bottom-parent {	
-			.flex-around;
+			.flex-around();
 			width: 100%;
 			line-height: 1.5;	
 						

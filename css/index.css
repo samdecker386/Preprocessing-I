@@ -140,14 +140,6 @@ h2,
 h4 {
   font-size: 1.6rem;
 }
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-.flex-around {
-  display: flex;
-  justify-content: space-around;
-}
 .anchorlink {
   text-decoration: none;
   color: blue;
