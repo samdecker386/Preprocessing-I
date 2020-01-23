@@ -59,6 +59,16 @@ table {
 @blackColor: black;
 @blueColor: blue;
 
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-around {
+	display: flex;
+	justify-content: space-around;
+}
+
 html, body {
 	height: 100%;
 	font-size: 62.5%;
@@ -67,20 +77,20 @@ html, body {
 .container {
 	width: 1140px;
 	margin: 0 auto;
-	font-family: @pageFont;	
+	font-family: @pageFont;
+	
+	
 
 	header {
 				
 		nav .links {
-			display: flex;
-			justify-content: space-evenly;
+			.flex-around;
 			font-size: 1.6rem;
 			padding: 2% 0;			
 		}
 
 		#contact {
-			display: flex;
-			flex-direction: column;
+			.flex-column;
 			align-items: center;
 			border-bottom: 2px dotted @grayColor;
 
@@ -105,8 +115,7 @@ html, body {
 			}
 		}
 		.intro {						
-			display: flex;
-			flex-direction: column;
+			.flex-column;
 			width: 95%;
 			line-height: 1.5;			
 
@@ -132,14 +141,12 @@ html, body {
 		border-bottom: 2px dotted @grayColor;
 
 		.middle-center {
-			display: flex;
-			justify-content: space-around;
+			.flex-around;
 			width: 95%;
 			padding: 5% 0;
 		
 			.left-side {
-				display: flex;
-				flex-direction: column;
+				.flex-column;
 				width: 43%;
 				line-height: 1.5;		
 
@@ -154,8 +161,7 @@ html, body {
 			}	
 			
 			.right-side {				
-				display: flex;
-				flex-direction: column;
+				.flex-column;
 				width: 43%;				
 
 				h3 {
@@ -164,8 +170,7 @@ html, body {
 				}
 
 				.skills-list {
-					display: flex;
-					flex-direction: column;					
+					.flex-column;					
 					height: 100%;
 					
 					p {
@@ -178,8 +183,7 @@ html, body {
 	}
 
 	#bottom-content {		
-		display: flex;
-		flex-direction: column;
+		.flex-column;
 		align-items: center;
 		padding-bottom: 5%;	
 
@@ -197,8 +201,7 @@ html, body {
 		}
 
 		.bottom-parent {	
-			display: flex;
-			justify-content: space-between;
+			.flex-around;
 			width: 100%;
 			line-height: 1.5;	
 						
@@ -276,4 +279,3 @@ p, a, h3, h2, h4 {
 	text-decoration: none;
 	color: @blueColor;
 }
-
