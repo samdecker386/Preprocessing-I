@@ -53,6 +53,14 @@ table {
     box-sizing: border-box;
 }
 
+p {
+	line-height: 1.5;
+}					
+
+p, a, h3, h2, h4 {
+	font-size: 1.6rem;	
+}
+
 @pageFont: 'Montserrat', sans-serif;
 @grayColor: gray;
 @whiteColor: white;
@@ -69,6 +77,19 @@ table {
 	justify-content: space-around;
 }
 
+.anchorlink {
+	text-decoration: none;
+	color: @blueColor;
+
+	@media (max-width: 500px) {
+		font-size: 5rem;
+		padding: 5% 0;
+		border-bottom: 1px solid @grayColor;
+		width: 100%;
+		text-align: center;
+	}
+}
+
 html, body {
 	height: 100%;
 	font-size: 62.5%;
@@ -78,15 +99,19 @@ html, body {
 	width: 1140px;
 	margin: 0 auto;
 	font-family: @pageFont;
-	
-	
 
 	header {
 				
 		nav .links {
 			.flex-around;
 			font-size: 1.6rem;
-			padding: 2% 0;			
+			padding: 2% 0;
+
+			@media (max-width: 500px) {
+				.flex-column;
+				align-items: center;
+				padding-bottom: 10%;					
+			}
 		}
 
 		#contact {
@@ -111,16 +136,34 @@ html, body {
 					font-size: 2rem;
 					line-height: 1.2;
 					color: @grayColor;
+
+					@media (max-width: 500px) {
+						font-size: 4rem;
+					}
+				}
+
+				@media (max-width: 500px) {
+					text-align: center;
+					padding: 8% 0;
 				}
 			}
 		}
 		.intro {						
 			.flex-column;
 			width: 95%;
-			line-height: 1.5;			
+			line-height: 1.5;
+			
+			@media (max-width: 500px) {
+				align-items: center;
+				width: 80%;
+			}
 
 			p {
 				padding: 1% 0 3% 0;
+
+				@media (max-width: 500px) {
+					font-size: 3rem;
+				}
 			}
 
 			.button {				
@@ -130,7 +173,17 @@ html, body {
 				width: 20%;
 				margin-bottom: 5%;
 				text-align: center;
-				color: @whiteColor;				
+				color: @whiteColor;
+				
+				@media (max-width: 500px) {
+					font-size: 3rem;
+					width: 30%;
+					margin: 5% 0 8% 0;
+				}
+			}
+
+			@media (max-width: 500px) {
+				text-align: center;				
 			}
 		}
 	}
@@ -144,6 +197,11 @@ html, body {
 			.flex-around;
 			width: 95%;
 			padding: 5% 0;
+
+			@media (max-width: 500px) {
+				width: 100%;			
+				padding-bottom: 0;	
+			}
 		
 			.left-side {
 				.flex-column;
@@ -153,32 +211,85 @@ html, body {
 				h3 {
 					font-size: 3rem;
 					padding: 3% 0;
+
+					@media (max-width: 500px) {
+						text-align: center;
+						font-size: 5rem;				
+					}
 				}
 
 				a, p {
 					padding: 2% 0;
 				}
+
+				p {
+					@media (max-width: 500px) {
+						font-size: 3rem;				
+					}
+				}
+
+				@media (max-width: 500px) {
+					width: 90%;
+					border-bottom: 2px dotted gray;
+					padding-bottom: 5%;				
+				}
 			}	
 			
 			.right-side {				
 				.flex-column;
-				width: 43%;				
+				width: 43%;	
+
+				@media (max-width: 500px) {
+					padding-top: 10%;
+					width: 100%;				
+				}
 
 				h3 {
 					font-size: 3rem;
-					padding: 3% 0;
+
+					@media (max-width: 500px) {
+						text-align: center;
+						font-size: 5rem;				
+					}
 				}
 
 				.skills-list {
 					.flex-column;					
 					height: 100%;
+
+					@media (max-width: 500px) {
+						padding-top: 2%;
+					}
 					
 					p {
 						padding: 5% 0;
 						border-bottom: 1px solid @grayColor;
+
+						@media (max-width: 500px) {
+							font-size: 3rem;
+							padding: 5% 0;
+							text-align: center;			
+						}
 					}								
 				}
-			}			
+			}
+			
+			@media (max-width: 500px) {
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+	}
+
+	.projectlink {
+		text-decoration: none;
+		color: @blueColor;
+	
+		@media (max-width: 500px) {
+			font-size: 4rem;
+			padding: 5% 0;
+			width: 100%;
+			text-align: center;
 		}
 	}
 
@@ -193,11 +304,17 @@ html, body {
 			h3 {
 				font-size: 3rem;
 				padding: 5% 0 4% 0;
+
+				@media (max-width: 500px) {
+					font-size: 5rem;
+					text-align: center;
+					padding: 12% 0 8% 0;				
+				}
 			}
 		}
 
 		.middle-bottom {
-			width: 95%;			
+			width: 95%;
 		}
 
 		.bottom-parent {	
@@ -208,58 +325,66 @@ html, body {
 			.yrs {					
 				width: 13%;
 
-					h4 {
-						font-size: 2rem;
-						font-weight: bold;
-						padding-bottom: 3%;
+				h4 {
+					@media (max-width: 500px) {
+						font-size: 3rem;		
 					}
-
-					p {
-						line-height: 1.5;
-					}					
+				}
+				
+				p {
+					@media (max-width: 500px) {
+						font-size: 3rem;		
+					}
+				}
 			}
 
 			.company {					
 				width: 25%;
 
 				h4 {
-					font-size: 2rem;
-					font-weight: bold;
-					padding-bottom: 3%;
+					@media (max-width: 500px) {
+						font-size: 3rem;		
+					}
 				}
-
+				
 				p {
-					line-height: 1.5;
-				}					
+					@media (max-width: 500px) {
+						font-size: 3rem;		
+					}
+				}
 			}
 
 			.title {					
 				width: 25%;
 
 				h4 {
-					font-size: 2rem;
-					font-weight: bold;
-					padding-bottom: 3%;
+					@media (max-width: 500px) {
+						font-size: 3rem;		
+					}
 				}
-
+				
 				p {
-					line-height: 1.5;
-				}					
+					@media (max-width: 500px) {
+						font-size: 3rem;		
+					}
+				}
 			}
 
 			.contact-info {					
 				width: 25%;
 
 				h4 {
-					font-size: 2rem;
-					font-weight: bold;
-					padding-bottom: 3%;
+					@media (max-width: 500px) {
+						font-size: 3rem;		
+					}
 				}
-
+				
 				p {
-					line-height: 1.5;
-				}					
-			}		
+					@media (max-width: 500px) {
+						font-size: 3rem;		
+					}
+				}
+			}			
 		}
 	}
 
@@ -269,13 +394,18 @@ html, body {
 		background: @grayColor;
 		color: @whiteColor;
 		text-shadow: 1px 1px @blackColor;
+
+		p {
+			@media (max-width: 500px) {
+				font-size: 3rem;
+			}
+		}
 	}
 }
-p, a, h3, h2, h4 {
-	font-size: 1.6rem;
+
+h4 {
+	font-size: 2rem;
+	font-weight: bold;
+	padding-bottom: 3%;
 }
 
-.anchorlink {
-	text-decoration: none;
-	color: @blueColor;
-}
