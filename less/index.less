@@ -54,6 +54,238 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 62.5%;
+}
+
+.container {
+	width: 1140px;
+
+	font-family: 'Montserrat', sans-serif;
+	margin: 0 auto;
+
+	header {
+				
+		nav .links {
+			display: flex;
+			justify-content: space-evenly;
+			padding: 2% 0;
+			font-size: 1.6rem;
+		}
+
+		#contact {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			border-bottom: 2px dotted gray;
+
+			img {
+				width: 100%;
+			}
+
+			.center {			
+				width: 95%;
+				padding-bottom: 3%;			
+
+				h1 {
+					font-size: 5rem;
+					padding: 5% 0 2% 0;
+				}
+			
+				p {
+					font-size: 2rem;
+					line-height: 1.2;
+					color: gray;
+				}
+			}
+		}
+		.intro {
+			width: 95%;			
+			display: flex;
+			flex-direction: column;
+			
+
+			p {
+				padding: 1% 0 3% 0;
+			}
+
+			.button {
+				border: 2px solid gray;
+				background: gray;
+				border-radius: 5%;
+				padding: 1%;
+				width: 20%;
+				text-align: center;
+				color: white;
+				margin-bottom: 5%;
+			}
+		}
+	}
+
+	#middle-content {
+		display: flex;
+		justify-content: center;
+		border-bottom: 2px dotted gray;
+
+		.middle-center {			
+			padding: 5% 0;
+			display: flex;
+			justify-content: space-around;
+			width: 95%;
+		
+			.left-side {
+				display: flex;
+				flex-direction: column;
+				width: 43%;		
+
+				h3 {
+					font-size: 3rem;
+					padding: 3% 0;
+				}
+
+				a, p {
+					padding: 2% 0;
+				}
+			}	
+			
+			.right-side {				
+				display: flex;
+				flex-direction: column;
+				width: 43%;				
+
+				h3 {
+					font-size: 3rem;
+					padding: 3% 0;
+				}
+
+				.skills-list {
+					display: flex;
+					flex-direction: column;					
+					height: 100%;
+					
+					p {
+						padding: 3% 0;
+						border-bottom: 1px solid gray;
+					}								
+				}
+			}			
+		}
+	}
+
+	#bottom-content {
+		
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 5%;
+	
+
+		.work-history {
+			
+			width: 95%;
+				
+			h3 {
+				font-size: 3rem;
+				padding: 5% 0 4% 0;
+			}
+		}
+
+		.middle-bottom {
+			width: 95%;
+			
+		}
+
+		.bottom-parent {
+			
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			
+		
+			
+						
+
+				.yrs {
+					
+					width: 13%;
+
+						h4 {
+							font-size: 2rem;
+							font-weight: bold;
+							padding-bottom: 3%;
+						}
+
+						p {
+							line-height: 1.5;
+						}
+					
+				}
+
+				.company {
+					
+					width: 25%;
+
+					h4 {
+						font-size: 2rem;
+						font-weight: bold;
+						padding-bottom: 3%;
+					}
+
+					p {
+						line-height: 1.5;
+					}
+					
+				}
+
+				.title {
+					
+					width: 25%;
+
+					h4 {
+						font-size: 2rem;
+						font-weight: bold;
+						padding-bottom: 3%;
+					}
+
+					p {
+						line-height: 1.5;
+					}
+					
+				}
+
+				.contact-info {
+					
+					width: 25%;
+
+					h4 {
+						font-size: 2rem;
+						font-weight: bold;
+						padding-bottom: 3%;
+					}
+
+					p {
+						line-height: 1.5;
+					}
+					
+				}
+		
+		}
+	}
+
+	footer {
+		text-align: center;
+		padding: 2%;
+		background: gray;
+		color: white;
+		text-shadow: 1px 1px black;
+	}
+}
+p, a, h3, h2, h4 {
+	font-size: 1.6rem;
+}
+
+.anchorlink {
+	text-decoration: none;
+	color: blue;
 }
 
