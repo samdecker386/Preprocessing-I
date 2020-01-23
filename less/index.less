@@ -53,6 +53,12 @@ table {
     box-sizing: border-box;
 }
 
+@pageFont: 'Montserrat', sans-serif;
+@grayColor: gray;
+@whiteColor: white;
+@blackColor: black;
+@blueColor: blue;
+
 html, body {
 	height: 100%;
 	font-size: 62.5%;
@@ -60,24 +66,23 @@ html, body {
 
 .container {
 	width: 1140px;
-
-	font-family: 'Montserrat', sans-serif;
 	margin: 0 auto;
+	font-family: @pageFont;	
 
 	header {
 				
 		nav .links {
 			display: flex;
 			justify-content: space-evenly;
-			padding: 2% 0;
 			font-size: 1.6rem;
+			padding: 2% 0;			
 		}
 
 		#contact {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			border-bottom: 2px dotted gray;
+			border-bottom: 2px dotted @grayColor;
 
 			img {
 				width: 100%;
@@ -95,29 +100,28 @@ html, body {
 				p {
 					font-size: 2rem;
 					line-height: 1.2;
-					color: gray;
+					color: @grayColor;
 				}
 			}
 		}
-		.intro {
-			width: 95%;			
+		.intro {						
 			display: flex;
 			flex-direction: column;
-			
+			width: 95%;
+			line-height: 1.5;			
 
 			p {
 				padding: 1% 0 3% 0;
 			}
 
-			.button {
-				border: 2px solid gray;
-				background: gray;
+			.button {				
+				background: @grayColor;
 				border-radius: 5%;
 				padding: 1%;
 				width: 20%;
-				text-align: center;
-				color: white;
 				margin-bottom: 5%;
+				text-align: center;
+				color: @whiteColor;				
 			}
 		}
 	}
@@ -125,18 +129,19 @@ html, body {
 	#middle-content {
 		display: flex;
 		justify-content: center;
-		border-bottom: 2px dotted gray;
+		border-bottom: 2px dotted @grayColor;
 
-		.middle-center {			
-			padding: 5% 0;
+		.middle-center {
 			display: flex;
 			justify-content: space-around;
 			width: 95%;
+			padding: 5% 0;
 		
 			.left-side {
 				display: flex;
 				flex-direction: column;
-				width: 43%;		
+				width: 43%;
+				line-height: 1.5;		
 
 				h3 {
 					font-size: 3rem;
@@ -164,24 +169,21 @@ html, body {
 					height: 100%;
 					
 					p {
-						padding: 3% 0;
-						border-bottom: 1px solid gray;
+						padding: 5% 0;
+						border-bottom: 1px solid @grayColor;
 					}								
 				}
 			}			
 		}
 	}
 
-	#bottom-content {
-		
+	#bottom-content {		
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding-bottom: 5%;
-	
+		padding-bottom: 5%;	
 
-		.work-history {
-			
+		.work-history {			
 			width: 95%;
 				
 			h3 {
@@ -191,39 +193,17 @@ html, body {
 		}
 
 		.middle-bottom {
-			width: 95%;
-			
+			width: 95%;			
 		}
 
-		.bottom-parent {
-			
-			width: 100%;
+		.bottom-parent {	
 			display: flex;
 			justify-content: space-between;
-			
-		
-			
+			width: 100%;
+			line-height: 1.5;	
 						
-
-				.yrs {
-					
-					width: 13%;
-
-						h4 {
-							font-size: 2rem;
-							font-weight: bold;
-							padding-bottom: 3%;
-						}
-
-						p {
-							line-height: 1.5;
-						}
-					
-				}
-
-				.company {
-					
-					width: 25%;
+			.yrs {					
+				width: 13%;
 
 					h4 {
 						font-size: 2rem;
@@ -233,51 +213,59 @@ html, body {
 
 					p {
 						line-height: 1.5;
-					}
-					
+					}					
+			}
+
+			.company {					
+				width: 25%;
+
+				h4 {
+					font-size: 2rem;
+					font-weight: bold;
+					padding-bottom: 3%;
 				}
 
-				.title {
-					
-					width: 25%;
+				p {
+					line-height: 1.5;
+				}					
+			}
 
-					h4 {
-						font-size: 2rem;
-						font-weight: bold;
-						padding-bottom: 3%;
-					}
+			.title {					
+				width: 25%;
 
-					p {
-						line-height: 1.5;
-					}
-					
+				h4 {
+					font-size: 2rem;
+					font-weight: bold;
+					padding-bottom: 3%;
 				}
 
-				.contact-info {
-					
-					width: 25%;
+				p {
+					line-height: 1.5;
+				}					
+			}
 
-					h4 {
-						font-size: 2rem;
-						font-weight: bold;
-						padding-bottom: 3%;
-					}
+			.contact-info {					
+				width: 25%;
 
-					p {
-						line-height: 1.5;
-					}
-					
+				h4 {
+					font-size: 2rem;
+					font-weight: bold;
+					padding-bottom: 3%;
 				}
-		
+
+				p {
+					line-height: 1.5;
+				}					
+			}		
 		}
 	}
 
 	footer {
 		text-align: center;
 		padding: 2%;
-		background: gray;
-		color: white;
-		text-shadow: 1px 1px black;
+		background: @grayColor;
+		color: @whiteColor;
+		text-shadow: 1px 1px @blackColor;
 	}
 }
 p, a, h3, h2, h4 {
@@ -286,6 +274,6 @@ p, a, h3, h2, h4 {
 
 .anchorlink {
 	text-decoration: none;
-	color: blue;
+	color: @blueColor;
 }
 

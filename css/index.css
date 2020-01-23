@@ -137,14 +137,14 @@ body {
 }
 .container {
   width: 1140px;
-  font-family: 'Montserrat', sans-serif;
   margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
 }
 .container header nav .links {
   display: flex;
   justify-content: space-evenly;
-  padding: 2% 0;
   font-size: 1.6rem;
+  padding: 2% 0;
 }
 .container header #contact {
   display: flex;
@@ -169,22 +169,22 @@ body {
   color: gray;
 }
 .container header .intro {
-  width: 95%;
   display: flex;
   flex-direction: column;
+  width: 95%;
+  line-height: 1.5;
 }
 .container header .intro p {
   padding: 1% 0 3% 0;
 }
 .container header .intro .button {
-  border: 2px solid gray;
   background: gray;
   border-radius: 5%;
   padding: 1%;
   width: 20%;
+  margin-bottom: 5%;
   text-align: center;
   color: white;
-  margin-bottom: 5%;
 }
 .container #middle-content {
   display: flex;
@@ -192,15 +192,16 @@ body {
   border-bottom: 2px dotted gray;
 }
 .container #middle-content .middle-center {
-  padding: 5% 0;
   display: flex;
   justify-content: space-around;
   width: 95%;
+  padding: 5% 0;
 }
 .container #middle-content .middle-center .left-side {
   display: flex;
   flex-direction: column;
   width: 43%;
+  line-height: 1.5;
 }
 .container #middle-content .middle-center .left-side h3 {
   font-size: 3rem;
@@ -225,7 +226,7 @@ body {
   height: 100%;
 }
 .container #middle-content .middle-center .right-side .skills-list p {
-  padding: 3% 0;
+  padding: 5% 0;
   border-bottom: 1px solid gray;
 }
 .container #bottom-content {
@@ -245,9 +246,10 @@ body {
   width: 95%;
 }
 .container #bottom-content .bottom-parent {
-  width: 100%;
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  line-height: 1.5;
 }
 .container #bottom-content .bottom-parent .yrs {
   width: 13%;
